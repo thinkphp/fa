@@ -1,6 +1,8 @@
 /**
  *  Approximate the function sin with series Taylor.
  *
+ *  Can be computed  as follows:
+ * 
  *  sin(x) = x - x^3/3! + x^5/5! - x^7/7! + ....(-1)^n+1*x^(2n+1)/(2n+1)!;
  *  
  *
@@ -52,12 +54,16 @@ double mySin(double x) {
 
 int main() {
 
+    //declare a double var
     double x;
 
+    //give me the number
     printf("x=");
 
+    //scanf with the format %lf for double specifier
     scanf("%lf", &x);
 
+    //printf with %lf for double as well
     printf("sin(%.3lf) = %.3lf\n", x , sin( x ));
 
     printf("sin(%.3lf) = %.3lf", x , sin( x )); 
