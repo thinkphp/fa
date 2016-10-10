@@ -1,6 +1,8 @@
 /**
  *  Approximate the function COS with series Taylor.
  *
+ *  Can be computed  as follows:
+ * 
  *  cos(x) = 1 - x^2/2! + x^4/4! - x^6/6! + ....(-1)^n*x^(2n)/(2n)!;
  *  
  */
@@ -63,6 +65,7 @@ int main() {
 
     double x;
 
+    //give me the number to compute sin
     printf("x=");
 
     //we need to use %lf format specifier to read a double 
