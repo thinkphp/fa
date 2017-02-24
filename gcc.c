@@ -2,7 +2,7 @@
 #include <malloc.h>
 #include <time.h>
 
-int gcc(int a,int b) {
+int gcc(int a, int b) {
 
     if(b == 0) return a;
 
