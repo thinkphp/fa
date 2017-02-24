@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#define FIN "data.in"
+#define FIN "test.in"
 #define FOUT "maximumPrimes.out"
 
 using namespace std;
