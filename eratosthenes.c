@@ -1,3 +1,13 @@
+/**
+
+  Sieve of Eratosthenes in C
+  Twitter     : http://twitter.com/thinkphp
+  Website     : http://thinkphp.ro
+  Google Plus : http://gplus.to/thinkphp
+  MIT Style License     
+
+*/
+
 #include <stdio.h>
 #define MAXN 60001
 
