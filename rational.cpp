@@ -90,9 +90,9 @@ void ordinateur_added_produit(Rational &number) {
 
 void display_number_rational(Rational &r) {
 
-     cout<<"---------------------------------"<<endl;
+     cout<<"------------------"<<endl<<"--->>>> ";
      cout<<r.numerator<<"/"<<r.denominator<<endl;
-     cout<<"---------------------------------"<<endl;
+     cout<<"------------------"<<endl;
 }
 
 
@@ -104,9 +104,11 @@ void runMenu(Rational &number) {
 
      display_number_rational( number );
 
-     cout<<"---------------------------------"<<endl;
-     cout<<" + Add \n - Sub \n * Product \n / Division \n x EXIT"<<endl;
-     cout<<"---------------------------------"<<endl;
+     cout<<"------------------"<<endl;
+     cout<<"      MENU       "<<endl;
+     cout<<"------------------"<<endl;
+     cout<<" +    Add \n -    Sub \n *    Product \n /    Division \n x    EXIT"<<endl;
+     cout<<"------------------"<<endl;
      cin>>ch; 
      switch( ch ) {
 
