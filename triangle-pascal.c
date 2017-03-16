@@ -7,10 +7,15 @@
 int main() {
 
     int n,
+
         i,
+
         j,
+
         k,
+
         sp,
+
         elem;
 
     printf("Enter the rows of Pascal's triangle ->>> n=");
