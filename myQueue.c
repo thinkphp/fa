@@ -122,7 +122,7 @@ int main() {
     printf("Rear -> %d\n",back());
 */
     while(!isEmpty(Front)) {
-         printf("%d ", Front->data);
+         printf("%d ", front());
          pop();
     }
 
