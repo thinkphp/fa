@@ -9,18 +9,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int fact(int n) {
+double fact(int n) {
 
     if(n == 0) return 1;
 
-       else return n * fact( n -1);
+       else return n * fact( n - 1);
 }
 
-float myPow(int a, int b) {
+double myPow(double a, double b) {
 
-      int i, 
+      int i;
 
-          p = 1;
+      double p = 1;
 
       for(i = 1; i <= b; ++i) p *= a;
 
@@ -31,7 +31,7 @@ double mySin(double x) {
 
     int i = 2;
 
-    float EPS = 0.00001;
+    double EPS = 0.001;
 
     double term1 = x, 
 
@@ -41,7 +41,7 @@ double mySin(double x) {
 
                  term1 = term2;
     
-                 term2 += pow(-1, i) * (double) myPow(x, (2*i+1)) / fact(2*i+1);
+                 term2 += (double) pow(-1, i) * (double) myPow(x, (2*i+1)) / fact(2*i+1);
               
                  i++;
           }        
@@ -58,9 +58,9 @@ int main() {
 
     scanf("%lf", &x);
 
-    printf("sin(%.2f) = %.10f\n", x , sin( x ));
+    printf("sin(%.3lf) = %.3lf\n", x , sin( x ));
 
-    printf("sin(%.2f) = %.10f", x , sin( x )); 
+    printf("sin(%.3lf) = %.3lf", x , sin( x )); 
 
  return 0;
 }
