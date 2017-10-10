@@ -36,9 +36,12 @@ int changeNumber(int n, int a, int b) {
     return invers2;
 };
 
+
+
 int main() {
 
     freopen(FIN, "r", stdin);
+
     freopen(FOUT, "w", stdout);
 
     int *arr, i; 
